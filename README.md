@@ -1,89 +1,222 @@
+
 # AI Maintenance Copilot
 
-**Industrial analytics meets generative AI.** A Streamlit decision-support prototype that turns maintenance indicators and event histories into asset-priority dashboards, grounded explanations, and PDF reports.
+**Industrial Analytics Meets Generative AI**
 
-![Maintenance Copilot dashboard running locally](assets/dashboard-overview.png)
+A Python-based decision-support application combining industrial maintenance analytics, reliability indicators, and generative AI to support equipment prioritization and explainable maintenance decisions.
 
-*Real screenshot from an earlier local dashboard iteration, using synthetic data. The latest interface may differ.*
+Built with **Python, Streamlit, Pandas, Gemini API, Function Calling, and Multi-Agent Orchestration**.
 
-## What problem does it solve?
+![Maintenance Dashboard](assets/dashboard-overview.png)
 
-Maintenance teams need to make sense of reliability, downtime, costs, and corrective interventions across multiple assets. This prototype brings those indicators together and lets a user ask **which equipment deserves attention—and why**.
+## Overview
 
-## What it does
+Industrial maintenance teams must analyze equipment availability, failure histories, maintenance costs, and reliability indicators to determine which assets require attention.
 
-- **Industrial BI:** availability, MTBF, MTTR, maintenance cost, criticality, and asset prioritization.
-- **Historical analysis:** corrective vs. preventive events and recorded failure-family patterns.
-- **AI explanations:** ask questions about the loaded dataset through Gemini.
-- **Three analysis modes:** direct LLM, tool-calling agent, or sequential two-agent orchestration.
-- **Auditable answers:** read-only Python tools, evidence handoff, and execution trace.
-- **Reporting:** export a PDF summary based on the analysis.
-- **Import your own data:** supported CSV/Excel formats, with input validation.
+AI Maintenance Copilot combines these indicators into an interactive dashboard and allows users to investigate maintenance priorities using generative AI.
 
-## Architecture
+The application uses synthetic datasets for demonstration purposes.
+
+## Key Features
+
+### 1. Industrial Analytics Dashboard
+
+- Equipment availability and criticality
+- Mean Time Between Failures (MTBF)
+- Mean Time To Repair (MTTR)
+- Maintenance costs and prioritization
+- Corrective versus preventive interventions
+- Failure analysis and Pareto charts
+- CSV/Excel data import
+
+### 2. AI-Powered Maintenance Analysis
+
+Users can ask questions about equipment performance, reliability, and maintenance priorities.
+
+The application supports three analysis modes:
+
+| Mode | Description |
+|---|---|
+| Direct LLM | Gemini analyzes structured maintenance information. |
+| Tool-Calling Agent | Gemini invokes read-only Python tools to retrieve maintenance evidence. |
+| Multi-Agent Orchestration | Two specialized Gemini roles collaborate through a Python coordinator. |
+
+### 3. Multi-Agent Architecture
+
+The advanced workflow separates responsibilities between two specialized AI roles and a deterministic Python coordinator.
+
+**Agent 1 — Maintenance Analyst**
+
+- Interprets the user's question.
+- Calls Python tools to retrieve equipment information.
+- Examines reliability indicators and maintenance priorities.
+- Produces an initial evidence-based analysis.
+
+**Python Coordinator**
+
+- Collects the Analyst's findings.
+- Organizes structured evidence.
+- Transfers the information to the second agent.
+- Maintains an auditable execution trace.
+
+**Agent 2 — Maintenance Consultant**
+
+- Reviews the Analyst's findings.
+- Interprets maintenance risks and trade-offs.
+- Produces actionable recommendations.
+- Identifies uncertainties requiring human verification.
 
 ```mermaid
 flowchart TD
-    A[Maintenance CSV / Excel] --> B[Python + Pandas validation & KPIs]
-    B --> C[Streamlit dashboard]
-    C --> D[Gemini Analyst]
-    D <-->|Read-only function calling| E[Python analysis tools]
-    D --> F[Python coordinator + evidence handoff]
-    F --> G[Gemini Consultant]
-    G --> H[Answer, audit trace & PDF report]
+    A[Maintenance CSV / Excel] --> B[Python + Pandas]
+    B --> C[Maintenance KPIs and Analytics]
+    C --> D[Streamlit Interface]
+    D --> E[Gemini Maintenance Analyst]
+    E <-->|Function Calling| F[Read-Only Python Tools]
+    E --> G[Python Coordinator]
+    G --> H[Structured Evidence Handoff]
+    H --> I[Gemini Maintenance Consultant]
+    I --> J[Recommendations and Execution Trace]
 ```
 
-The multi-agent option uses **two separate Gemini roles** coordinated sequentially by Python. It is *not* autonomous industrial decision-making, a multi-provider system, or dynamic agent delegation. The recommendations are for human review.
+The multi-agent workflow is sequential. It does not implement autonomous equipment control, dynamic delegation, or independent industrial decision-making.
 
-## Evidence and testing
+## Application Screenshots
 
-- **28 automated tests passed** in the V6.2 build environment.
-- A local multi-agent demonstration was exercised using an **alternative synthetic dataset with 14 assets and intervention histories**.
-- The application displays actual tool calls and the separation between Analyst, Python coordinator, and Consultant.
-- An example PDF was generated from synthetic test data and inspected for readability.
+### Maintenance Dashboard
 
-**Important:** these are software and demonstration checks—not proof of predictive accuracy, real-world savings, or validated maintenance diagnoses.
+Interactive visualization of equipment availability, costs, reliability indicators, and maintenance priorities.
 
-### Example report
+![Dashboard Overview](assets/dashboard-overview.png)
 
-<img src="assets/report-preview.png" alt="Example PDF report with synthetic test data" width="420">
+### Multi-Agent AI Analysis
 
-*Sample report generated using synthetic data and illustrative analysis; not a screenshot of a live Gemini response.*
+Real application demonstration showing Gemini-based maintenance analysis, Python tool execution, and the multi-agent workflow.
 
-## Run locally
+![Multi-Agent Analysis](assets/maintenance-ai-tab.png)
 
-Requires Python 3.11+.
+## Project Evolution
+
+The project was developed incrementally to demonstrate the integration of industrial analytics and generative AI.
+
+| Stage | Implementation |
+|---|---|
+| V1 — Industrial BI | Maintenance KPIs, equipment ranking, and dashboard |
+| V2 — Generative AI | Gemini integration for maintenance questions |
+| V3 — Tool Calling | Gemini connected to read-only Python analysis tools |
+| V4 — Multi-Agent | Specialized Analyst and Consultant roles coordinated by Python |
+
+This progression illustrates the transition from a conventional analytics application to an AI-assisted decision-support system.
+
+## Example Use Case
+
+**User question:**
+
+> Which equipment should be prioritized considering maintenance costs, MTBF, MTTR, and failure history?
+
+**Application workflow:**
+
+1. Analyze the maintenance indicators.
+2. Retrieve relevant equipment data using Python tools.
+3. Compare maintenance priorities and reliability indicators.
+4. Transfer structured evidence between the AI roles.
+5. Generate recommendations and identify uncertainties.
+
+Recommendations are based on the available dataset and require human technical validation.
+
+## Technology Stack
+
+| Technology | Application |
+|---|---|
+| Python | Application logic and data processing |
+| Streamlit | Interactive web application |
+| Pandas | Maintenance data analysis |
+| Gemini API | Generative AI integration |
+| Function Calling | LLM access to Python analysis tools |
+| Multi-Agent Orchestration | Sequential coordination of specialized AI roles |
+| ReportLab | PDF report generation |
+| Pytest | Automated software testing |
+
+## Installation
+
+**Requirements:** Python 3.11+ and a Gemini API key for AI functionality.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ioglas-af/ai-maintenance.git
+cd ai-maintenance
+```
+
+Create a virtual environment:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
+
+Install dependencies:
+
+```powershell
 python -m pip install -r requirements.txt
+```
+
+Create the file `.streamlit/secrets.toml`:
+
+```toml
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+```
+
+Never commit your real API key.
+
+Start the application:
+
+```powershell
 python -m streamlit run app.py
 ```
 
-Open **http://localhost:8501**. The demo dashboard works without a Gemini key. To enable AI analysis, create `.streamlit/secrets.toml`:
+Open:
 
-```toml
-GEMINI_API_KEY = "YOUR_OWN_GEMINI_KEY"
-```
+http://localhost:8501
 
-The selected Gemini model must be enabled for your Google project. **Never commit the real key**; the repository includes a `.gitignore` and a safe example configuration.
+The analytics dashboard can run without Gemini. AI analysis requires a valid API key, an accessible model, and available API quota.
 
-For a demonstration, use the sample datasets in `data/`. To run the offline tests:
+## Testing and Validation
+
+The V6.2 build passed **28 automated tests** in its development environment.
+
+Testing covered:
+
+- Maintenance analytics and data validation
+- Python tool execution
+- Multi-agent coordination
+- Structured evidence transfer
+- Application behavior
+
+The application was also exercised with synthetic maintenance datasets, including a scenario with 14 assets and intervention histories.
+
+These results demonstrate software functionality, not predictive accuracy or validated industrial maintenance outcomes.
+
+To run the automated tests:
 
 ```powershell
 python -m pytest -q
 ```
 
-## Technology
-
-**Python · Streamlit · Pandas · Gemini API · Function Calling · Sequential Multi-Agent Orchestration · PDF Reporting · Pytest**
-
 ## Limitations
 
-This is a **portfolio prototype** using synthetic data. Its priority score is a transparent heuristic, **not predictive maintenance**. MTBF and MTTR are imported metrics; historical failure categories do not establish root causes or prove that particular physical components exist. Currency is generic. Gemini outputs require human verification. When an AI mode is selected, some user-provided data may be transmitted to Google's API—use only authorized data.
+- Demonstration datasets are synthetic.
+- Equipment prioritization uses a heuristic score, not a predictive maintenance model.
+- MTBF and MTTR are imported indicators.
+- AI-generated recommendations require human verification.
+- The system does not perform autonomous maintenance interventions.
+- The application is a portfolio prototype, not a production industrial system.
+- Gemini availability and API quotas depend on Google's service.
 
----
+## Author
 
-**Author:** Ioglas Alves da Fonseca  
-**Related work:** [Industrial Maintenance Analytics](https://github.com/ioglas-af/industrial-maintenance)
+**Ioglas Alves da Fonseca**
+
+Electrical Engineering | Industrial Systems | Automation | Applied AI
+
+**Related Project:** [Industrial Maintenance Analytics](https://github.com/ioglas-af/industrial-maintenance)
