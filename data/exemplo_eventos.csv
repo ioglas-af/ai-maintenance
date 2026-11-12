@@ -1,0 +1,71 @@
+﻿asset_name,event_date,maintenance_type,failure_family,downtime_hours
+Pump P-04,2026-01-07,PREV,,0.0
+Labeler L-02,2026-01-11,CORR,Pneumatic,1.97
+Cooling Unit U-03,2026-01-15,CORR,Mechanical,3.54
+Compressor C-02,2026-01-19,CORR,Process,1.26
+Steam Valve V-08,2026-01-23,CORR,Sensor / Instrumentation,2.83
+Fermenter T-06,2026-01-27,PREV,,0.0
+Conveyor CV-07,2026-01-31,CORR,Pneumatic,2.11
+Heat Exchanger HX-01,2026-02-04,CORR,Sensor / Instrumentation,3.69
+Mixer M-05,2026-02-08,CORR,Electrical,1.4
+Filling Machine F-01,2026-02-12,CORR,Pneumatic,2.97
+Compressor C-02,2026-02-16,PREV,,0.0
+Steam Valve V-08,2026-02-20,CORR,Process,2.26
+Fermenter T-06,2026-02-24,CORR,Sensor / Instrumentation,3.83
+Conveyor CV-07,2026-02-28,CORR,Electrical,1.54
+Heat Exchanger HX-01,2026-03-04,CORR,Process,3.11
+Mixer M-05,2026-03-08,PREV,,0.0
+Filling Machine F-01,2026-03-12,CORR,Electrical,2.4
+Pump P-04,2026-03-16,CORR,Pneumatic,3.97
+Labeler L-02,2026-03-20,CORR,Mechanical,1.69
+Cooling Unit U-03,2026-03-24,CORR,Process,3.26
+Conveyor CV-07,2026-03-28,PREV,,0.0
+Heat Exchanger HX-01,2026-04-01,CORR,Mechanical,2.54
+Mixer M-05,2026-04-05,CORR,Process,4.11
+Filling Machine F-01,2026-04-09,CORR,Sensor / Instrumentation,1.83
+Pump P-04,2026-04-13,CORR,Electrical,3.4
+Labeler L-02,2026-04-17,PREV,,0.0
+Cooling Unit U-03,2026-04-21,CORR,Mechanical,2.69
+Compressor C-02,2026-04-25,CORR,Process,0.4
+Steam Valve V-08,2026-04-29,CORR,Pneumatic,1.97
+Fermenter T-06,2026-05-03,CORR,Mechanical,3.54
+Filling Machine F-01,2026-05-07,PREV,,0.0
+Pump P-04,2026-05-11,CORR,Sensor / Instrumentation,2.83
+Labeler L-02,2026-05-15,CORR,Electrical,0.54
+Cooling Unit U-03,2026-05-19,CORR,Pneumatic,2.11
+Compressor C-02,2026-05-23,CORR,Mechanical,3.69
+Steam Valve V-08,2026-05-27,PREV,,0.0
+Fermenter T-06,2026-05-31,CORR,Pneumatic,2.97
+Conveyor CV-07,2026-06-04,CORR,Mechanical,0.69
+Heat Exchanger HX-01,2026-06-08,CORR,Process,2.26
+Mixer M-05,2026-06-12,CORR,Sensor / Instrumentation,3.83
+Cooling Unit U-03,2026-06-16,PREV,,0.0
+Compressor C-02,2026-06-20,CORR,Pneumatic,3.11
+Steam Valve V-08,2026-06-24,CORR,Sensor / Instrumentation,0.83
+Fermenter T-06,2026-06-28,CORR,Electrical,2.4
+Conveyor CV-07,2026-07-02,CORR,Pneumatic,3.97
+Heat Exchanger HX-01,2026-07-06,PREV,,0.0
+Mixer M-05,2026-07-10,CORR,Process,3.26
+Filling Machine F-01,2026-07-14,CORR,Sensor / Instrumentation,0.97
+Pump P-04,2026-07-18,CORR,Electrical,2.54
+Labeler L-02,2026-07-22,CORR,Process,4.11
+Fermenter T-06,2026-07-26,PREV,,0.0
+Conveyor CV-07,2026-07-30,CORR,Electrical,3.4
+Heat Exchanger HX-01,2026-08-03,CORR,Pneumatic,1.11
+Mixer M-05,2026-08-07,CORR,Mechanical,2.69
+Filling Machine F-01,2026-08-11,CORR,Process,0.4
+Pump P-04,2026-08-15,PREV,,0.0
+Labeler L-02,2026-08-19,CORR,Mechanical,3.54
+Cooling Unit U-03,2026-08-23,CORR,Process,1.26
+Compressor C-02,2026-08-27,CORR,Sensor / Instrumentation,2.83
+Steam Valve V-08,2026-08-31,CORR,Electrical,0.54
+Mixer M-05,2026-09-04,PREV,,0.0
+Filling Machine F-01,2026-09-08,CORR,Mechanical,3.69
+Pump P-04,2026-09-12,CORR,Process,1.4
+Labeler L-02,2026-09-16,CORR,Pneumatic,2.97
+Cooling Unit U-03,2026-09-20,CORR,Mechanical,0.69
+Compressor C-02,2026-09-24,PREV,,0.0
+Steam Valve V-08,2026-09-28,CORR,Sensor / Instrumentation,3.83
+Fermenter T-06,2026-10-02,CORR,Electrical,1.54
+Conveyor CV-07,2026-10-06,CORR,Pneumatic,3.11
+Heat Exchanger HX-01,2026-10-10,CORR,Mechanical,0.83

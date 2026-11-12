@@ -1,0 +1,11 @@
+﻿asset_id;asset_name;criticality;availability_ratio;mttr_hours;mtbf_hours;total_maintenance_cost
+1;Pump P-04;A;0,927;9,3;112;18300
+2;Compressor C-02;A;0,944;6,8;180;15000
+3;Conveyor CV-07;B;0,961;4,5;290;8700
+4;Filling Machine F-01;A;0,977;3,6;420;11900
+5;Cooling Unit U-03;B;0,956;5,1;250;9500
+6;Fermenter T-06;B;0,985;2,2;610;3900
+7;Mixer M-05;C;0,989;1,6;780;2200
+8;Labeler L-02;B;0,974;3,4;460;5300
+9;Steam Valve V-08;C;0,992;1,8;820;1300
+10;Heat Exchanger HX-01;A;0,969;4,2;350;7900

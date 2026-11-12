@@ -1,0 +1,15 @@
+asset_name,criticality,availability_ratio,mttr_hours,mtbf_hours,total_maintenance_cost
+Motor MTR-11,A,0.915,1.6,85,1100
+Boiler BL-02,B,0.928,3.0,138,2390
+Packaging PK-07,C,0.941,4.4,191,3680
+Air Dryer DR-03,A,0.954,1.6,244,4970
+Hydraulic Press HP-09,B,0.967,3.0,297,6260
+Cooling Tower CT-01,B,0.98,4.4,350,7550
+Pump PU-14,A,0.921,1.6,403,8840
+Mixing Tank MX-12,A,0.934,3.0,456,10130
+Robot RB-05,B,0.947,4.4,509,11420
+Generator GN-08,C,0.96,1.6,562,12710
+Heat Pump HP-04,A,0.973,3.0,105,14000
+Valve VA-06,B,0.986,4.4,158,15290
+Conveyor CV-19,B,0.927,1.6,211,16580
+Compressor CP-10,A,0.94,3.0,264,17870

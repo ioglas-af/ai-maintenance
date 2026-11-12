@@ -1,0 +1,91 @@
+asset_name,event_date,maintenance_type,failure_family,downtime_hours
+Motor MTR-11,2025-09-01,PREV,,0.0
+Cooling Tower CT-01,2025-09-05,CORR,Electrical,1.4
+Heat Pump HP-04,2025-09-09,CORR,Thermal,1.8
+Boiler BL-02,2025-09-13,CORR,Sensor,2.2
+Pump PU-14,2025-09-17,CORR,Hydraulic,2.6
+Valve VA-06,2025-09-21,CORR,Mechanical,3.0
+Packaging PK-07,2025-09-25,PREV,,0.0
+Mixing Tank MX-12,2025-09-29,CORR,Thermal,3.8
+Conveyor CV-19,2025-10-03,CORR,Sensor,4.2
+Air Dryer DR-03,2025-10-07,CORR,Hydraulic,4.6
+Robot RB-05,2025-10-11,CORR,Mechanical,5.0
+Compressor CP-10,2025-10-15,CORR,Electrical,1.0
+Hydraulic Press HP-09,2025-10-19,PREV,,0.0
+Generator GN-08,2025-10-23,CORR,Sensor,1.8
+Boiler BL-02,2025-10-27,CORR,Hydraulic,2.2
+Pump PU-14,2025-10-31,CORR,Mechanical,2.6
+Valve VA-06,2025-11-04,CORR,Electrical,3.0
+Packaging PK-07,2025-11-08,CORR,Thermal,3.4
+Mixing Tank MX-12,2025-11-12,PREV,,0.0
+Conveyor CV-19,2025-11-16,CORR,Hydraulic,4.2
+Air Dryer DR-03,2025-11-20,CORR,Mechanical,4.6
+Robot RB-05,2025-11-24,CORR,Electrical,5.0
+Compressor CP-10,2025-11-28,CORR,Thermal,1.0
+Hydraulic Press HP-09,2025-12-02,CORR,Sensor,1.4
+Generator GN-08,2025-12-06,PREV,,0.0
+Motor MTR-11,2025-12-10,CORR,Mechanical,2.2
+Cooling Tower CT-01,2025-12-14,CORR,Electrical,2.6
+Heat Pump HP-04,2025-12-18,CORR,Thermal,3.0
+Packaging PK-07,2025-12-22,CORR,Sensor,3.4
+Mixing Tank MX-12,2025-12-26,CORR,Hydraulic,3.8
+Conveyor CV-19,2025-12-30,PREV,,0.0
+Air Dryer DR-03,2026-01-03,CORR,Electrical,4.6
+Robot RB-05,2026-01-07,CORR,Thermal,5.0
+Compressor CP-10,2026-01-11,CORR,Sensor,1.0
+Hydraulic Press HP-09,2026-01-15,CORR,Hydraulic,1.4
+Generator GN-08,2026-01-19,CORR,Mechanical,1.8
+Motor MTR-11,2026-01-23,PREV,,0.0
+Cooling Tower CT-01,2026-01-27,CORR,Thermal,2.6
+Heat Pump HP-04,2026-01-31,CORR,Sensor,3.0
+Boiler BL-02,2026-02-04,CORR,Hydraulic,3.4
+Pump PU-14,2026-02-08,CORR,Mechanical,3.8
+Valve VA-06,2026-02-12,CORR,Electrical,4.2
+Air Dryer DR-03,2026-02-16,PREV,,0.0
+Robot RB-05,2026-02-20,CORR,Sensor,5.0
+Compressor CP-10,2026-02-24,CORR,Hydraulic,1.0
+Hydraulic Press HP-09,2026-02-28,CORR,Mechanical,1.4
+Generator GN-08,2026-03-04,CORR,Electrical,1.8
+Motor MTR-11,2026-03-08,CORR,Thermal,2.2
+Cooling Tower CT-01,2026-03-12,PREV,,0.0
+Heat Pump HP-04,2026-03-16,CORR,Hydraulic,3.0
+Boiler BL-02,2026-03-20,CORR,Mechanical,3.4
+Pump PU-14,2026-03-24,CORR,Electrical,3.8
+Valve VA-06,2026-03-28,CORR,Thermal,4.2
+Packaging PK-07,2026-04-01,CORR,Sensor,4.6
+Mixing Tank MX-12,2026-04-05,PREV,,0.0
+Conveyor CV-19,2026-04-09,CORR,Mechanical,1.0
+Hydraulic Press HP-09,2026-04-13,CORR,Electrical,1.4
+Generator GN-08,2026-04-17,CORR,Thermal,1.8
+Motor MTR-11,2026-04-21,CORR,Sensor,2.2
+Cooling Tower CT-01,2026-04-25,CORR,Hydraulic,2.6
+Heat Pump HP-04,2026-04-29,PREV,,0.0
+Boiler BL-02,2026-05-03,CORR,Electrical,3.4
+Pump PU-14,2026-05-07,CORR,Thermal,3.8
+Valve VA-06,2026-05-11,CORR,Sensor,4.2
+Packaging PK-07,2026-05-15,CORR,Hydraulic,4.6
+Mixing Tank MX-12,2026-05-19,CORR,Mechanical,5.0
+Conveyor CV-19,2026-05-23,PREV,,0.0
+Air Dryer DR-03,2026-05-27,CORR,Thermal,1.4
+Robot RB-05,2026-05-31,CORR,Sensor,1.8
+Compressor CP-10,2026-06-04,CORR,Hydraulic,2.2
+Cooling Tower CT-01,2026-06-08,CORR,Mechanical,2.6
+Heat Pump HP-04,2026-06-12,CORR,Electrical,3.0
+Boiler BL-02,2026-06-16,PREV,,0.0
+Pump PU-14,2026-06-20,CORR,Sensor,3.8
+Valve VA-06,2026-06-24,CORR,Hydraulic,4.2
+Packaging PK-07,2026-06-28,CORR,Mechanical,4.6
+Mixing Tank MX-12,2026-07-02,CORR,Electrical,5.0
+Conveyor CV-19,2026-07-06,CORR,Thermal,1.0
+Air Dryer DR-03,2026-07-10,PREV,,0.0
+Robot RB-05,2026-07-14,CORR,Hydraulic,1.8
+Compressor CP-10,2026-07-18,CORR,Mechanical,2.2
+Hydraulic Press HP-09,2026-07-22,CORR,Electrical,2.6
+Generator GN-08,2026-07-26,CORR,Thermal,3.0
+Motor MTR-11,2026-07-30,CORR,Sensor,3.4
+Pump PU-14,2026-08-03,PREV,,0.0
+Valve VA-06,2026-08-07,CORR,Mechanical,4.2
+Packaging PK-07,2026-08-11,CORR,Electrical,4.6
+Mixing Tank MX-12,2026-08-15,CORR,Thermal,5.0
+Conveyor CV-19,2026-08-19,CORR,Sensor,1.0
+Air Dryer DR-03,2026-08-23,CORR,Hydraulic,1.4

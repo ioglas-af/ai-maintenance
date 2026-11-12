@@ -1,0 +1,27 @@
+# Never commit credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+
+# Python / OS
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local output / raw user data
+results/
+reports/
+output/
+*.log
+*.sqlite
+*.sqlite3
