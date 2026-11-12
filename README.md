@@ -65,19 +65,20 @@ This evolution demonstrates how conventional data analytics can be extended into
 
 ## Multi-Agent Architecture
 
+
 ```mermaid
 flowchart TD
-    A["Maintenance Data: CSV / Excel"] --> B["Python + Pandas"]
-    B --> C["KPIs and Reliability Analytics"]
-    C --> D["Streamlit Interface"]
-    D --> E["Gemini Analyst"]
-    E <-->|"Function Calling"| F["Read-Only Python Tools"]
-    E --> G["Python Coordinator"]
-    F --> G
-    G --> H["Structured Evidence Handoff"]
-    H --> I["Gemini Consultant"]
-    I --> J["Recommendations + Execution Trace"]
+    A["CSV / Excel"] --> B["Python KPIs"]
+    B --> C["Streamlit"]
+    C --> D["Gemini Analyst"]
+    D <--> E["Python Tools"]
+    D --> F["Coordinator"]
+    E --> F
+    F --> G["Evidence"]
+    G --> H["Gemini Consultant"]
+    H --> I["Final Answer"]
 ```
+
 
 ### Agent 1 — Maintenance Analyst
 
