@@ -25,3 +25,4 @@ output/
 *.log
 *.sqlite
 *.sqlite3
+*.pyc
